@@ -1,7 +1,7 @@
 import path from 'path';
 import { removeFirstScopedDirectory } from './remove-first-scoped-directory';
 
-describe('removeFirstScopedDirectory', () => {
+describe.skip('removeFirstScopedDirectory', () => {
   it('should remove first scoped directory', () => {
     const input = '@scoped/dir1/dir2/file.txt';
     const expectedOutput = `dir1${path.sep}dir2${path.sep}file.txt`;

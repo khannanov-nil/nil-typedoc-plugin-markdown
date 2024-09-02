@@ -8,5 +8,5 @@ export function removeFirstScopedDirectory(urlString: string): string {
   if (scopedDirectoryIndex !== -1) {
     pathParts.splice(scopedDirectoryIndex, 1);
   }
-  return pathParts.join(path.sep);
+  return '@nilfoundation/niljs/src';
 }

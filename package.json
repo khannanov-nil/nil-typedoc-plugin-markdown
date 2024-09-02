@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "workspaces": [
     "packages/typedoc-plugin-markdown",
     "packages/typedoc-plugin-remark",
