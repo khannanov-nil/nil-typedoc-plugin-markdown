@@ -3,5 +3,5 @@ export const presets = {
   hideBreadcrumbs: true,
   hidePageHeader: true,
   entryFileName: 'index.md',
-  plugin: ['typedoc-plugin-markdown'],
+  plugin: ['nil-typedoc-plugin-markdown'],
 };

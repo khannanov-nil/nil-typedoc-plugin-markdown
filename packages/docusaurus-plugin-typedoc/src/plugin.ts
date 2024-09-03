@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { Application, DeclarationOption } from 'typedoc';
-import { MarkdownApplication } from 'typedoc-plugin-markdown';
+import { MarkdownApplication } from 'nil-typedoc-plugin-markdown';
 import { PluginOptions } from './models';
 import { getPluginOptions } from './options';
 import * as options from './options/declarations';
@@ -15,7 +15,7 @@ export default async function pluginDocusaurus(
   context: any,
   opts: Partial<PluginOptions>,
 ) {
-  const PLUGIN_NAME = 'docusaurus-plugin-typedoc';
+  const PLUGIN_NAME = 'nil-docusaurus-plugin-typedoc';
 
   if (opts.id && !apps.includes(opts.id)) {
     apps.push(opts.id);

@@ -1,4 +1,4 @@
-import { NavigationItem } from 'typedoc-plugin-markdown';
+import { NavigationItem } from 'nil-typedoc-plugin-markdown';
 
 export function getSidebar(
   navigation: NavigationItem[],
@@ -55,9 +55,9 @@ function getNavigationItem(
 
   return id
     ? {
-        type: 'doc',
-        id,
-        label: `${navigationItem.title}`,
-      }
+      type: 'doc',
+      id,
+      label: `${navigationItem.title}`,
+    }
     : null;
 }

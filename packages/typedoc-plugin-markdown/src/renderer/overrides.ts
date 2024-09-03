@@ -106,7 +106,10 @@ export async function render(
       this.trigger(MarkdownPageEvent.END, page);
 
       try {
-        writeFileSync(page.filename, page.contents as string);
+        writeFileSync(
+          page.filename,
+          page.contents.replace(/\b[^ ]*\/src/g, ' \r\n@nilfoundation/niljs/src') as string
+        );
       } catch {
         this.application.logger.error(
           this.application.i18n.could_not_write_0(page.filename),
